@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAMPADA</title>
+    <style>
+        /* Estilo CSS embutido */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: blue;
+        }
+        
+
+        #botãoligado {
+            background-color: #af4c4c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-bottom:10px;
+            
+        }
+        #botãodesligado {
+            background-color: #4faf4c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-bottom:10px;
+            
+        }
+#card{
+text-align: center;
+margin:10px;
+padding: auto;
+border-color: aqua;
+border: solid ;
+
+}
+
+    </style>
+</head>
+<body>
+<div id="card">
+<img src="lampadadesligada.png">
+<div id="inter">
+    <button id="botãoligado">OFF</button>
+    <button id="botãodesligado">ON</button>
+</div>
+</div>
+<script>
+    // JavaScript embutido
+    
+    var botao = document.getElementById("botãodesligado");
+    var lampada = document.querySelector("img");
+
+    botao.addEventListener("click", function() {
+        lampada.src = "lampadaligada.png";
+    });
+
+    var botao = document.getElementById("botãoligado");
+    var lampada = document.querySelector("img");
+
+    botao.addEventListener("click", function() {
+        lampada.src = "lampadadesligada.png";
+    });
+</script>
+</body>
+</html>
+
+
